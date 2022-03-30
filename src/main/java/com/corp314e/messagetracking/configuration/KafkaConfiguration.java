@@ -1,4 +1,4 @@
-package com.corp314e.patienttracking.configuration;
+package com.corp314e.messagetracking.configuration;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;

@@ -1,4 +1,4 @@
-package com.corp314e.patienttracking.service;
+package com.corp314e.messagetracking.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

@@ -1,23 +1,23 @@
-package com.corp314e.patienttracking.controller;
+package com.corp314e.messagetracking.controller;
 
-import com.corp314e.patienttracking.service.Producer;
+import com.corp314e.messagetracking.service.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
 @CrossOrigin
-public class PatientController {
+public class MessageController {
 
     @Autowired
     Producer producer;
 
-    @GetMapping("/getpatient")
+    @GetMapping("/get")
     public String getPatient(){
         return "abc";
     }
 
-    @PostMapping("/postpatient")
+    @PostMapping("/send")
     public void registerUser(@RequestBody String msg) {
         producer.publishToTopic(msg);
 
