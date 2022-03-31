@@ -1,6 +1,6 @@
 package com.corp314e.messagetracking.controller;
 
-import com.corp314e.messagetracking.service.Producer;
+import com.corp314e.messagetracking.services.ProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class MessageController {
 
     @Autowired
-    Producer producer;
+    ProducerService producer;
 
     @GetMapping("/get")
     public String getPatient(){
@@ -23,3 +23,4 @@ public class MessageController {
 
     }
 }
+
